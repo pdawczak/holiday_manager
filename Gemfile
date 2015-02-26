@@ -46,6 +46,8 @@ gem "minitest-rails"
 group :test do
   gem "minitest-rails-capybara"
   gem "minitest-reporters"
+  gem "launchy"
+  gem "selenium-webdriver"
 end
 
 gem "react-rails", "~> 1.0.0.pre", github: "reactjs/react-rails"
