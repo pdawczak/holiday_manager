@@ -4,7 +4,7 @@ var styles = {
     default: {
         color: "black"
     },
-    underlined: {
+    actived: {
         color: "gray"
     }
 };
@@ -23,7 +23,7 @@ var Hello = React.createClass({
     render: function () {
         return (
             <div onClick={this._handleClick} 
-                 style={this.state.toggled ? styles.underlined : styles.default}>
+                 style={this.state.toggled ? styles.actived : styles.default}>
                 Hello {this.props.name}!
             </div>
         );
