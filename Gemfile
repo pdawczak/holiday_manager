@@ -10,7 +10,7 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -46,4 +46,9 @@ gem "minitest-rails"
 group :test do
   gem "minitest-rails-capybara"
   gem "minitest-reporters"
+  gem "launchy"
+  gem "selenium-webdriver"
 end
+
+gem "react-rails", "~> 1.0.0.pre", github: "reactjs/react-rails"
+gem "browserify-rails", "~> 0.7"
